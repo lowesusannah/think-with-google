@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: red;
+}
+
+
+/*Mobile*/
+@media screen and (max-width:600px) {
+  body {
+    background-color: red;
+  }
+}
+
+/*Tablet*/
+@media screen and (min-width:601px) and (max-width:899px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/*Sm Comp*/
+@media screen and (min-width:900px) and (max-width:1199px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+/*Lareger Comp*/
+@media screen and (min-width:1200px) {
+
+}
+
+
+/* Colors/Fonts
+blue: #437AF8
+red: #FD0015
+yellow: #FFBC00
+green: #00B254
+
+background: #F5F5F5
+open, hyperlink, and bottom bar blue: #3A5AD9
+
+fonts:
+
+header (top and bottom): roboto light, 26px, 33px line height; 0px between characters;
+small heads: roboto, regular, 18, 25
+caption text: roboto, regular, 14, 22
+medium heads: roboto, regular, 23, 29
+body: roboto, 16px, 25px,
+tiny: roboto regular, 13, 20
+
+
+
+
+*/
