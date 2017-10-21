@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  color: #424242;
 }
 
 body {
@@ -26,6 +27,16 @@ h2 {
 
 h3 {
   margin: 0px;
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+a {
+  text-decoration: none;
 }
 
 h6 {
@@ -116,16 +127,16 @@ h6 {
 .photo-card h6 {
   color: white;
   font-size: 13px;
-  padding-top: 20px; 
+  padding-top: 20px;
 }
 
-.cards {
-  height: 800px;
+/*.cards {
+  height: 515px;
   width: 93vw;
   margin: 10px 10px 10px 0px;
   display: block;
   float: left;
-}
+}*/
 
 .white-card  {
   width: 93vw;
@@ -162,6 +173,76 @@ h6 {
   margin-left: 10px;
 }
 
+.photo-card2 {
+  float: left;
+  width: 93vw;
+  height: 350px;
+  display: block;
+  background-image: url("../img/attn-research.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:rgba(0, 0, 0, 0.3);
+  background-blend-mode:color;
+  padding: 20px;
+  padding-bottom: 75px;
+}
+
+.photo-card2 .caption  {
+  height: 300px;
+  /*padding-top: 200px;*/
+}
+
+.photo-card2 h3 {
+  padding-top: 220px;
+  width: 90vw;
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.photo-card2 h6 {
+  color: white;
+  font-size: 13px;
+  padding-top: 20px;
+}
+
+.deeper-dive {
+  height: 700px;
+  width: 93vw;
+  display: block;
+  float: left;
+  margin-top: 75px;
+  padding-top: 75px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: white;
+}
+
+.deeper-dive h3 {
+  margin-top: 20px;
+  float: left;
+}
+
+.deeper-dive img {
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 5px;
+  float: left;
+}
+
+.deeper-dive p {
+  margin:0px;
+}
+
+.deeper-dive a p {
+  color: #4664DB;
+  text-decoration: none;
+}
+
+.only-large {
+  display: none;
+}
 
 /*Mobile*/
 @media screen and (max-width:600px) {
@@ -171,21 +252,114 @@ h6 {
 }
 
 /*Tablet*/
-@media screen and (min-width:601px) and (max-width:899px) {
+@media screen and (min-width:601px) and (max-width:900px) {
   body {
-    background-color: blue;
+    background-color: #F5F5F5;
   }
+  .white-card {
+    width: 43vw;
+    margin-right: 3vw;
+    float: left;
+    height: 330px;
+    padding: 0px;
+  }
+  .white-card img {
+    float: left;
+    width: 43vw;
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+  }
+  .white-card .caption {
+    margin: 20px;
+  }
+  .cards {
+    height: 700px;
+  }
+
+  .deeper-dive {
+    padding-left: 20px;
+  }
+
+  .only-large {
+    display: none;
+  }
+
 }
 
-/*Sm Comp*/
-@media screen and (min-width:900px) and (max-width:1199px) {
+/*Comp*/
+@media screen and (min-width:901px) and (max-width: 1600px) {
   body {
-    background-color: yellow;
+    background-color: #F5F5F5;
+    padding: 0px;
   }
-}
+  .only-large-title {
+    font-size: 40px;
+    padding-left: 60px;
+    padding-top: 150px;
+  }
 
-/*Larger Comp*/
-@media screen and (min-width:1200px) {
+  .title {
+    display: none;
+  }
+
+  .only-large {
+    display: block;
+    width: 100vw;
+    background-image: url("../img/hero-mobile-search.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    float: left;
+  }
+
+  .photo-card {
+    width: 45vw;
+    height: 330px;
+    float: left;
+    margin-right: 30px;
+  }
+
+  .photo-card .caption{
+    width: 40vw;
+  }
+
+  .photo-card .caption h3{
+    width: 40vw;
+  }
+
+  .photo-card2 {
+    width: 45vw;
+    padding: 20px;
+    float: left;
+    height: 330px;
+    margin-right: 30px;
+  }
+
+  .photo-card2 h3 {
+    width: 40vw;
+  }
+
+  .white-card {
+    width: 22vw;
+    float: left;
+    height: 330px;
+    padding: 0px;
+    margin-right: 20px;
+  }
+  .white-card img {
+    float: left;
+    width: 22vw;
+    padding: 0px;
+    margin: 0px 0px 30px 0px;
+  }
+  .white-card .caption {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .deeper-dive {
+    padding-left: 50px;
+  }
 
 }
 
@@ -196,7 +370,7 @@ red: #FD0015
 yellow: #FFBC00
 green: #00B254
 
-lgiht grey logo text: #B0B0B0
+light grey logo text: #B0B0B0
 dark grey logo text: #717171
 
 background: #F5F5F5
@@ -210,8 +384,4 @@ caption text: roboto, regular, 14, 22
 medium heads: roboto, regular, 23, 29
 body: roboto, 16px, 25px,
 tiny: roboto regular, 13, 20
-
-
-
-
 */
